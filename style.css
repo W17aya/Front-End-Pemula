@@ -14,7 +14,8 @@ body {
 
 header {
   background: #5f30e2;
-  padding: 16px;
+  text-align: center;
+  padding: 6px;
   color: white;
 }
 .head_bar {
@@ -111,7 +112,6 @@ input[type="date"] {
   border: none;
   font-family: Raleway;
   border-radius: 16px;
-  padding: 12px 24px;
   border: 2px solid #5f30e2;
   color: black;
   font-size: 24px;
@@ -221,7 +221,7 @@ margin-bottom: unset;
 }
 
 .input_section > form > .input {
-  /*margin: 5px;*/
+
   margin-bottom: 4px;
   font-size: 18;
   font-weight: lighter;
@@ -236,7 +236,7 @@ margin-bottom: unset;
 }
 
 .input_section > form > button {
-  background-color: #3498db;
+  background-color: #9f88dd;
   color: white;
   border: 0;
   border-radius: 5px;
@@ -244,6 +244,7 @@ margin-bottom: unset;
   width: 100%;
   padding: 8px;
   cursor: pointer;
+  text-size-adjust: auto;
 }
 
 .input_section > form > button > span {
@@ -349,7 +350,7 @@ margin-bottom: unset;
 
 .book_shelf > .book_list > .book_item > h3,
 p {
-  margin: 8px 0;
+  /* margin: 8px 0; */
 }
 
 .book_shelf > .book_list > .book_item > .action > button {
