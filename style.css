@@ -22,7 +22,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2980b9;
   color: white;
 }
 .wrapper {
@@ -315,8 +314,8 @@ margin-bottom: unset;
 
 .book_shelf {
   margin: 16px 0 0 0;
-  border: 1px solid black;
-  padding: 16px;
+  border: 1px solid #14bcd3;
+  padding: 5px;
   border-radius: 10px;
 }
 
@@ -326,13 +325,26 @@ margin-bottom: unset;
 
 .book_shelf > .book_list {
   padding: 16px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+  0 15px 40px rgba(166, 173, 201, 0.2);
+}
+.shadow {
+
+}
+
+
+
+.list-item {
+  width: 90%;
 }
 
 .book_shelf > .book_list > .book_item {
   padding: 8px 16px 16px 16px;
-  border: 1px solid black;
+  border: 1px solid #5f30e2;
   border-radius: 5px;
   margin: 10px 0;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+  0 15px 40px rgba(166, 173, 201, 0.2);
 }
 
 .book_shelf > .book_list > .book_item > h3,
@@ -348,8 +360,8 @@ p {
   cursor: pointer;
 }
 
-.book_shelf > .book_list > .book_item > .action > .green {
-  background-color: #2ecc71;
+.book_shelf > .book_list > .book_item > .action> .green {
+  background-color: rgb(11, 221, 11);
   color: white;
 }
 
@@ -360,6 +372,11 @@ p {
 
 .book_shelf > .book_list > .book_item > .action > .red {
   background-color: #e74c3c;
+  color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .aqua {
+  background-color: #27cdf6;
   color: white;
 }
 

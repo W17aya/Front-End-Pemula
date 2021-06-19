@@ -14,14 +14,14 @@
 </head>
 
 <body>
-  <header class="head_bar">
-    <h1 class="head_bar__title">Aplikasi Rak Buku</h1>
+  <header>
+    <h1 class="head_bar">Aplikasi Rak Buku</h1>
   </header>
 
   <div class="wrapper">
     <div class="container bg-white shadow">
       <h2 class="container-header text-center">Masukkan Buku Baru</h2>
-        <form class="form" action="#" id="form">
+      <form class="form" action="#" id="form">
         <div class="form-group formTitle">
           <label for="inputBookTitle">Judul</label>
           <input id="inputBookTitle" type="text" />
@@ -41,44 +41,45 @@
           <label for="inputBookIsComplete">Selesai baca</label>
           <input id="inputBookIsComplete" type="checkbox" />
         </div>
-        <input type="submit" id="bookSubmit"class="btn-submit"> </form>
-      </div>
+        <input type="submit" id="bookSubmit" class="btn-submit">
+      </form>
+    </div>
 
     <div class="container bg-white shadow">
-<!--    <section class="search_section book_shelf" id="searchSection">-->
-<!--      <h2 id="searchSectionH2">Cari Buku</h2>-->
       <section class="search_section">
         <h2 class="container-header text-center">Cari Buku</h2>
 
-      <form class="form" action="#" id="formCari">
-        <input type="text" id="searchBookTitle" name="search" placeholder="Silahkan Cari Data Buku (Judul, Tahun, Penulis)">
-<!--        <input type="submit" id="searchSubmit" value="Cari">-->
-        <input type="submit" id="searchSubmit"  value="Cari" class="btn-submit">
-
-      <div id="searchResult" class="book_list" style="width: 100%"></div>
-
-      </form>
-
-    </section>
+        <form class="form" action="#" id="formCari">
+          <input type="text" id="searchBookTitle" name="search"
+            placeholder="Silahkan Cari Data Buku (Judul, Tahun, Penulis)">
+          <input type="submit" id="searchSubmit" value="Cari" class="btn-submit">
+    </div>
+    <div class="container bg-white shadow">
+      <div id="searchResult" class="book_list" style="width: 100%">
+      </div>
     </div>
 
-    <div class="container">
-    <section class="book_shelf" id="bookShelfUncompleted">
-      <h2 id="uncompletedH2">Belum selesai dibaca</h2>
+  </div>
+  </section>
 
-      <div id="incompleteBookshelfList" class="book_list"></div>
-    </section>
+  <div class="wrapper">
+    <div class="container bg-white shadow">
+      <section class="book_shelf" id="bookShelfUncompleted">
+        <h2 class="container-header text-center">Belum selesai dibaca</h2>
+        <div id="incompleteBookshelfList" class="book_list"></div>
+      </section>
     </div>
+  </div>
 
-    <div class="container">
-    <section class="book_shelf" id="bookShelfCompleted">
-      <h2 id="completedH2">Selesai dibaca</h2>
-
-      <div id="completeBookshelfList" class="book_list"></div>
-    </section>
-    </main>
+  <div class="wrapper">
+    <div class="container bg-white shadow">
+      <section class="book_shelf" id="bookShelfCompleted">
+        <h2 class="container-header text-center">Selesai dibaca</h2>
+        <div id="completeBookshelfList" class="book_list"></div>
+      </section>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -189,7 +189,7 @@ function showData(books = []) {
                 <p>${book.year}</p>
 
                 <div class="action">
-                    <button class="green" onclick="readedBook('${book.id}')">Selesai baca</button>
+                    <button class="green" onclick="readedBook('${book.id}')">Tandai Selesai</button>
                     <button class="yellow" onclick="editBook('${book.id}')">Edit Buku</button>
                     <button class="red" onclick="deleteBook('${book.id}')">Hapus buku</button>
                 </div>
@@ -205,7 +205,7 @@ function showData(books = []) {
                 <p> ${book.year}</p>
 
                 <div class="action">
-                    <button class="green" onclick="unreadedBook('${book.id}')">Tandai belum selesai</button>
+                    <button class="aqua" onclick="unreadedBook('${book.id}')">Tandai Belum Selesai</button>
                     <button class="yellow" onclick="editBook('${book.id}')">Edit Buku</button>
                     <button class="red" onclick="deleteBook('${book.id}')">Hapus buku</button>
                 </div>
@@ -227,7 +227,7 @@ function showSearchResult(books) {
             <h3>${book.title}</h3>
             <p>Penulis: ${book.author}</p>
             <p>Tahun: ${book.year}</p>
-            <p>${book.isCompleted ? 'Sudah dibaca' : 'Belum dibaca'}</p>
+            <p>Status: ${book.isCompleted ? 'Sudah dibaca' : 'Belum dibaca'}</p>
         </article>
         `
 
@@ -287,7 +287,7 @@ function editBook(id) {
     bookDataDetail[0].isCompleted ? readed.checked = true : readed.checked = false
 
     btnSubmit.innerHTML = "Simpan Perubahan"
-    btnSubmit.value = ""
+    btnSubmit.value == ""
 
 }
 
